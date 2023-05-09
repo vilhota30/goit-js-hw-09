@@ -43,3 +43,25 @@ function FirstPromiseCreate(position, delay) {
       });
    }
  }
+<<<<<<< Updated upstream
+=======
+ 
+ 
+
+ function FirstPromiseCreate(position, delay) {
+  
+   const obj = { position, delay };
+   const shouldResolve = Math.random() > 0.3;
+
+    return new Promise((resolve, reject) => {
+    setTimeout(() => {
+        if (shouldResolve) {
+          resolve(obj);
+        } else {
+         reject(obj);
+        }
+      }, delay);
+    });
+ }
+ 
+>>>>>>> Stashed changes
