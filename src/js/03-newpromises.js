@@ -10,7 +10,7 @@ const refs = {
 
 
 refs.body.style.backgroundColor = '#f5b8de';
-refs.form.addEventListener('click', createOtherPromises);
+refs.form.addEventListener('submit', createOtherPromises);
 
 function createOtherPromises (e) {
    e.preventDefault();
